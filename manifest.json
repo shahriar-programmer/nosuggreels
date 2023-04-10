@@ -4,7 +4,7 @@
   "version": "1.0",
   "description": "Removes all 'Suggested for you' and 'Reels' posts from Facebook feed.",
   "author": "Shahriar Ahmed Shovon",
-  "homepage_url": "https://shahriarahmed.me/firefox/addon/disable-fb-news-feed-story/",
+  "homepage_url": "https://github.com/shahriar-programmer/nosuggreels",
   "permissions": ["storage", "activeTab", "tabs", "<all_urls>"],
   "icons": {
     "48": "icon.png",
