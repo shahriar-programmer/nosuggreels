@@ -1,6 +1,7 @@
 // Get the checkbox elements
 const suggestedPostsEnabled = document.getElementById("suggestedPostsEnabled");
 const reelsEnabled = document.getElementById("reelsEnabled");
+const sponsoredEnabled = document.getElementById("sponsoredEnabled");
 const form = document.querySelector("form");
 
 // Update the stored option when the submit button clicked
@@ -10,6 +11,7 @@ form.addEventListener("submit", (event) => {
   browser.storage.local.set({
     suggestedPostsEnabled: suggestedPostsEnabled.checked,
     reelsEnabled: reelsEnabled.checked,
+    sponsoredEnabled: sponsoredEnabled.checked
   });
 
   // Display the toast message
@@ -28,8 +30,10 @@ browser.storage.local
   .get({
     suggestedPostsEnabled: true,
     reelsEnabled: true,
+    sponsoredEnabled: true
   })
   .then((data) => {
     suggestedPostsEnabled.checked = data.suggestedPostsEnabled;
     reelsEnabled.checked = data.reelsEnabled;
+    sponsoredEnabled.checked = data.sponsoredEnabled
   });
