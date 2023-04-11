@@ -24,7 +24,6 @@ function removePosts(text) {
   const posts = document.querySelectorAll("span");
   posts.forEach((post) => {
     if (post.innerText === text) {
-      console.log("THIS");
       let parentElement = post;
       for (let i = 0; i < 50; i++) {
         parentElement = parentElement.parentElement;
